@@ -1,8 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# CineSage
 
-Currently, two official plugins are available:
+A movie description app using TMDB api.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+## Demo
+
+https://cinesage.vercel.app/
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+Use the `.env.example` file for environment variables refrence
+
+
+## 🚀 About Me
+I'm a Front End developer...
+
+
+## Screenshots
+
+![image](https://github.com/Zydiag/cinesage/assets/96966190/f55774ee-3454-4e37-9a02-4ef25d63e639)
+
+
