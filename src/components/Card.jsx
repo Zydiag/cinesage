@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { Link } from 'react-router-dom';
-import backup from '../assets/backup.jpg';
-import loadingLogo from '../assets/loading.svg';
-import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
+import backup from "../assets/backup.jpg";
+import loadingLogo from "../assets/loading.svg";
+import { useEffect, useState } from "react";
 
 export const Card = ({ movie }) => {
   const { id, original_title, overview, poster_path } = movie;
@@ -23,9 +23,9 @@ export const Card = ({ movie }) => {
       setImageLoading(false);
     };
 
-    image.addEventListener('load', handleImageLoad);
+    image.addEventListener("load", handleImageLoad);
     return () => {
-      image.removeEventListener('load', handleImageLoad);
+      image.removeEventListener("load", handleImageLoad);
     };
   }, [image_path]);
 
