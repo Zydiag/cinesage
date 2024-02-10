@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import backup from "../assets/backup.jpg";
 import loadingLogo from "../assets/loading.svg";
 import { FaPlayCircle } from "react-icons/fa";
+import { formatMinutesToHoursAndMinutes } from "../utils/formatTime";
+import { formatNumber } from "../utils/formatNumber";
 
 export const MovieDetail = () => {
   const { id } = useParams();
@@ -142,15 +144,15 @@ export const MovieDetail = () => {
 
             <p className="my-4">
               <span className="mr-2 font-bold">RunTime:</span>
-              <span>{movie.runtime} min.</span>
+              <span>{formatMinutesToHoursAndMinutes(movie.runtime)}</span>
             </p>
             <p className="my-4">
               <span className="mr-2 font-bold">Budget:</span>
-              <span>{movie.budget}</span>
+              <span>{formatNumber(movie.budget)}</span>
             </p>
             <p className="my-4">
               <span className="mr-2 font-bold">Revenue:</span>
-              <span>{movie.revenue}</span>
+              <span>{formatNumber(movie.revenue)}</span>
             </p>
             <p className="my-4">
               <span className="mr-2 font-bold">Release Date:</span>
