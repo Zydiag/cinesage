@@ -21,7 +21,7 @@ I'm a Front End developer...
 
 
 ## Screenshots
+![image](https://github.com/Zydiag/cinesage/assets/96966190/319181a2-839f-467a-8b76-924998f8bcef)
 
-![image](https://github.com/Zydiag/cinesage/assets/96966190/f55774ee-3454-4e37-9a02-4ef25d63e639)
 
 
