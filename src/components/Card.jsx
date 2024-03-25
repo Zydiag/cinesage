@@ -30,26 +30,30 @@ export const Card = ({ movie }) => {
   }, [image_path]);
 
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
-      <Link to={`/movie/${id}`}>
+    <Link to={`/movie/${id}`}>
+      <div
+        className="max-w-sm bg-white border border-gray-200 rounded-lg overflow-hidden shadow
+			group
+			dark:bg-gray-800 dark:border-gray-700 m-3 relative"
+      >
         {imageLoading ? (
-          <section className="flex justify-center items-center h-[70vh]">
+          <section className="flex   rounded-lg justify-center items-center h-[70vh]">
             <img src={loadingLogo} alt="" />
           </section>
         ) : (
           <img className="rounded-t-lg" src={image_path} alt="logo" />
         )}
-      </Link>
-      <div className="p-5">
-        <Link to={`/movie/${id}`}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {original_title}
-          </h5>
-        </Link>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {overview}
-        </p>
+        <div className="absolute bottom-[-100%] group-hover:bottom-0  duration-700 p-5 bg-black/70 text-white rounded-b-md">
+          <Link to={`/movie/${id}`}>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+              {original_title}
+            </h5>
+          </Link>
+          <p className="mb-3 font-normal text-white dark:text-gray-400">
+            {overview}
+          </p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };

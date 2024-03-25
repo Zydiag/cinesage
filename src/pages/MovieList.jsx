@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useEffect } from 'react';
-import { Card } from '../components/Card';
-import { useFetch } from '../hooks/useFetch';
-import loadingLogo from '../assets/loading.svg';
+import { useEffect } from "react";
+import { Card } from "../components/Card";
+import { useFetch } from "../hooks/useFetch";
+import loadingLogo from "../assets/loading.svg";
 
 export const MovieList = ({ apiPath, title }) => {
   const { data: movies, error, isLoading } = useFetch(apiPath);
